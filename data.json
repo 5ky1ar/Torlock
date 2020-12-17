@@ -28,6 +28,13 @@
     "username_claimed": "admin",
     "username_unclaimed": "noonewouldeverusethis"
   },
+  "OnionSocial": {
+    "errorType": "status_code",
+    "url": "http://socialxnedgivnc4.onion/{}",
+    "urlMain": "http://socialxnedgivnc4.onion/",
+    "username_claimed": "Anonymous",
+    "username_unclaimed": "noonewouldeverusethis"
+  },
   "OnionTube": {
     "errorType": "response_url",
     "errorUrl": "http://tubef7zilcjhme2g.onion",

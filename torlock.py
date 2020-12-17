@@ -1,10 +1,9 @@
 #! /usr/bin/env python3
 
 """
-Sherlock: Find Usernames Across Social Networks Module
+Torlock: Find Usernames Across Dark Web Social Networks Module
 
-This module contains the main logic to search for usernames at social
-networks.
+This module contains the main logic to search for usernames at social networks.
 """
 
 import csv
@@ -24,13 +23,13 @@ from result import QueryResult
 from notify import QueryNotifyPrint
 from sites  import SitesInformation
 
-module_name = "Sherlock: Find Usernames Across Social Networks"
-__version__ = "0.14.0"
+module_name = "Torlock: Find Usernames Across Dark Web Social Networks"
+__version__ = "0.0.2"
 
 
 
 
-class SherlockFuturesSession(FuturesSession):
+class TorlockFuturesSession(FuturesSession):
     def request(self, method, url, hooks={}, *args, **kwargs):
         """Request URL.
 
@@ -88,7 +87,7 @@ class SherlockFuturesSession(FuturesSession):
             # No response hook was already defined, so install it ourselves.
             hooks['response'] = [response_time]
 
-        return super(SherlockFuturesSession, self).request(method,
+        return super(TorlockFuturesSession, self).request(method,
                                                            url,
                                                            hooks=hooks,
                                                            *args, **kwargs)
@@ -125,10 +124,10 @@ def get_response(request_future, error_type, social_network):
     return response, error_context, expection_text
 
 
-def sherlock(username, site_data, query_notify,
-             tor=True, unique_tor=True,
+def torlock(username, site_data, query_notify,
+             tor=False, unique_tor=False,
              proxy=None, timeout=None):
-    """Run Sherlock Analysis.
+    """Run Torlock Analysis.
 
     Checks for existence of username on various social media sites.
 
@@ -180,7 +179,7 @@ def sherlock(username, site_data, query_notify,
         max_workers=len(site_data)
 
     # Create multi-threaded session for all requests.
-    session = SherlockFuturesSession(max_workers=max_workers,
+    session = TorlockFuturesSession(max_workers=max_workers,
                                      session=underlying_session)
 
 
@@ -520,16 +519,16 @@ def main():
 
     args = parser.parse_args()
 
-    # Check for newer version of Sherlock. If it exists, let the user know about it
+    # Check for newer version of Torlock. If it exists, let the user know about it
     try:
-        r = requests.get("https://raw.githubusercontent.com/sherlock-project/sherlock/master/sherlock/sherlock.py")
+        r = requests.get("https://raw.githubusercontent.com/5ky1ar/Torlock/master/torlock.py")
 
         remote_version = str(re.findall('__version__ = "(.*)"', r.text)[0])
         local_version = __version__
 
         if remote_version != local_version:
             print("Update Available!\n" +
-                  f"You are running version {local_version}. Version {remote_version} is available at https://git.io/sherlock")
+                  f"You are running version {local_version}. Version {remote_version} is available at https://github.com/5ky1ar/Torlock")
 
     except Exception as error:
         print(f"A problem occured while checking for an update: {error}")
@@ -562,7 +561,7 @@ def main():
     # Create object with all information about sites we are aware of.
     try:
         if args.local:
-            sites = SitesInformation(os.path.join(os.path.dirname(__file__), 'resources/data.json'))
+            sites = SitesInformation(os.path.join(os.path.dirname(__file__), 'data.json'))
         else:
             sites = SitesInformation(args.json_file)
     except Exception as error:
@@ -609,7 +608,7 @@ def main():
 
     # Run report on all specified users.
     for username in args.username:
-        results = sherlock(username,
+        results = torlock(username,
                            site_data,
                            query_notify,
                            tor=args.tor,
