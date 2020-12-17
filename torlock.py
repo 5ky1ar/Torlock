@@ -126,7 +126,7 @@ def get_response(request_future, error_type, social_network):
 
 
 def sherlock(username, site_data, query_notify,
-             tor=False, unique_tor=False,
+             tor=True, unique_tor=True,
              proxy=None, timeout=None):
     """Run Sherlock Analysis.
 

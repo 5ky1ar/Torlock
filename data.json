@@ -1,45 +1,45 @@
 {
   "Cave Tor": {
     "errorType": "status_code",
-    "url": "https://tor2web-02.onionsearchengine.com/index.php?q=http://cavetord6bosm3sl.onion/users/{}",
-    "urlMain": "https://tor2web-02.onionsearchengine.com/index.php?q=http://cavetord6bosm3sl.onion/",
+    "url": "http://cavetord6bosm3sl.onion/users/{}",
+    "urlMain": "http://cavetord6bosm3sl.onion/",
     "username_claimed": "admin",
     "username_unclaimed": "noonewouldeverusethis"
   },
   "Dread": {
     "errorType": "status_code",
-    "url": "https://tor2web-02.onionsearchengine.com/index.php?q=http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/u/{} ",
-    "urlMain": "https://tor2web-02.onionsearchengine.com/index.php?q=http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/",
+    "url": "http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/u/{} ",
+    "urlMain": "http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/",
     "username_claimed": "admin",
     "username_unclaimed": "noonewouldeverusethis"
   },
   "Galaxy3": {
     "errorType": "response_url",
-    "errorUrl": "https://tor2web-02.onionsearchengine.com/index.php?q=http://galaxy3bhpzxecbywoa2j4tg43muepnhfalars4cce3fcx46qlc6t3id.onion/",
-    "url": "https://tor2web-02.onionsearchengine.com/index.php?q=http://galaxy3bhpzxecbywoa2j4tg43muepnhfalars4cce3fcx46qlc6t3id.onion/profile/{}",
-    "urlMain": "https://tor2web-02.onionsearchengine.com/index.php?q=http://galaxy3bhpzxecbywoa2j4tg43muepnhfalars4cce3fcx46qlc6t3id.onion/",
+    "errorUrl": "http://galaxy3bhpzxecbywoa2j4tg43muepnhfalars4cce3fcx46qlc6t3id.onion/",
+    "url": "http://galaxy3bhpzxecbywoa2j4tg43muepnhfalars4cce3fcx46qlc6t3id.onion/profile/{}",
+    "urlMain": "http://galaxy3bhpzxecbywoa2j4tg43muepnhfalars4cce3fcx46qlc6t3id.onion/",
     "username_claimed": "admin",
     "username_unclaimed": "noonewouldeverusethis7"
   },
   "Hidden Answers": {
     "errorType": "status_code",
-    "url": "https://tor2web-02.onionsearchengine.com/index.php?q=http://answerszuvs3gg2l64e6hmnryudl5zgrmwm3vh65hzszdghblddvfiqd.onion/user/{}",
-    "urlMain": "https://tor2web-02.onionsearchengine.com/index.php?q=http://answerszuvs3gg2l64e6hmnryudl5zgrmwm3vh65hzszdghblddvfiqd.onion/",
+    "url": "http://answerszuvs3gg2l64e6hmnryudl5zgrmwm3vh65hzszdghblddvfiqd.onion/user/{}",
+    "urlMain": "http://answerszuvs3gg2l64e6hmnryudl5zgrmwm3vh65hzszdghblddvfiqd.onion/",
     "username_claimed": "admin",
     "username_unclaimed": "noonewouldeverusethis"
   },
   "OnionTube": {
     "errorType": "response_url",
-    "errorUrl": "https://tor2web-02.onionsearchengine.com/index.php?q=http://tubef7zilcjhme2g.onion",
-    "url": "https://tor2web-02.onionsearchengine.com/index.php?q=http://tubef7zilcjhme2g.onion/@{}",
-    "urlMain": "https://tor2web-02.onionsearchengine.com/index.php?q=http://tubef7zilcjhme2g.onion/",
+    "errorUrl": "http://tubef7zilcjhme2g.onion",
+    "url": "http://tubef7zilcjhme2g.onion/@{}",
+    "urlMain": "http://tubef7zilcjhme2g.onion/",
     "username_claimed": "admin",
     "username_unclaimed": "noonewouldeverusethis7"
   },
   "Raddle": {
     "errorType": "status_code",
-    "url": "https://tor2web-02.onionsearchengine.com/index.php?q=http://lfbg75wjgi4nzdio.onion/user/{}",
-    "urlMain": "https://tor2web-02.onionsearchengine.com/index.php?q=http://lfbg75wjgi4nzdio.onion/",
+    "url": "http://lfbg75wjgi4nzdio.onion/user/{}",
+    "urlMain": "http://lfbg75wjgi4nzdio.onion/",
     "username_claimed": "admin",
     "username_unclaimed": "noonewouldeverusethis"
   }
