@@ -127,3 +127,30 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Editor Configurations
+.vscode/
+.idea/
+
+# Pip
+src/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Output files, except requirements.txt
+*.txt
+!requirements.txt
+
+# Comma-Separated Values (CSV) Reports
+*.csv
+
+# Excluded sites list
+tests/.excluded_sites
+
+# MacOS Folder Metadata File
+.DS_Store
+
+# Vim swap files
+*.swp
