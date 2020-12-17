@@ -125,7 +125,7 @@ def get_response(request_future, error_type, social_network):
 
 
 def torlock(username, site_data, query_notify,
-             tor=False, unique_tor=False,
+             tor=True, unique_tor=True,
              proxy=None, timeout=None):
     """Run Torlock Analysis.
 
@@ -198,7 +198,7 @@ def torlock(username, site_data, query_notify,
         # A user agent is needed because some sites don't return the correct
         # information since they think that we are bots (Which we actually are...)
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0',
         }
 
         if "headers" in net_info:
